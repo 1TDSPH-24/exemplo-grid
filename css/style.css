@@ -6,14 +6,19 @@
 
 .container{
     display: grid;
-    background-color: blueviolet;
-    border: 2px solid #fff000;
-    grid-template-columns: 10vw auto 30% auto;
+    background-color: rgb(238, 127, 179);
+    border: 2px solid #ff0077;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 10vh 10vh 10vh;
     column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
 .box{
-    color: #fff;
-    border: 2px solid #0000ff;
+    color: #ffffff;
+    border: 2px solid #91ff00;
 }
