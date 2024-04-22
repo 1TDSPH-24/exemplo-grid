@@ -8,9 +8,12 @@
     display: grid;
     background-color: blueviolet;
     border: 2px solid #fff000;
-    grid-template-columns: 10vw auto 30% auto;
+    grid-template-columns: 24vw 24vw 24vw 26vw;
+    grid-template-rows: 10vh 20vh 30vh 10vh;
     column-gap: 5px;
-
+    row-gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .box{
