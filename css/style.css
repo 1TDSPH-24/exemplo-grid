@@ -5,19 +5,40 @@
 }
 
 .container{
+    padding: 10px;
     display: grid;
     background-color: blueviolet;
     border: 2px solid #fff000;
-    grid-template-columns: 30vw 30vw 28vw 10vw;
-    grid-template-rows: 10vh 20vh 30vh 10vh;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 200px);
     column-gap: 5px;
     row-gap: 5px;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+   
 
+}
+
+.container :nth-child(2), .container :nth-child(3){
+    background-color: #ff3300;
+}
+
+.container :nth-child(2):hover, .container :nth-child(3):hover{
+    background-color: #00ff0d;
 }
 
 .box{
     color: #fff;
     border: 2px solid #0000ff;
+    width: 50px;
+    height: 50px;
+    background-color: #fff000;
+}
+.box-1{
+    background-color: aqua;
+}
+.box-1:hover{
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.9);
 }
