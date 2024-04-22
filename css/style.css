@@ -6,16 +6,38 @@
 .container{
     display: grid;
     background-color: blueviolet;
-    border: 2px solid #fff000 ;
-    grid-template-columns: 24vw 24vw 24vw 26vw;
-    grid-template-rows: 10vh 10vh 10vh 10vh;
+    border: 2px solid #ff008c ;
+    grid-template-columns: 1fr 1fr 1fr;;
+    grid-template-rows: repeat(3,200px);
     column-gap: 5px;
     row-gap: 5px;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
 }
+
+.container :nth-child(2), .container :nth-child(3){
+    background-color: #30003a;
+}
+.container :nth-child(2):hover, .container :nth-child(3):hover{
+    background-color: #ff3546;
+    transition: all .4s ease-in-out;
+}
+
 
 .box{
     color: #fff;
-    border: 2px solid #0000ff;
-}
+    border: 2px solid #ff359a;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(223, 153, 255);
+ }
+
+ .box-1{
+    background-color: blueviolet;
+    transition: all .4s ease-in-out;
+ }
+ .box-1:hover{
+    background-color: #ff3546;
+ }
+
+
