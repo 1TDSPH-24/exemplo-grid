@@ -8,16 +8,36 @@
     display: grid;
     background-color: blueviolet;
     border: 2px solid #fff000;
-    grid-template-columns: 24vw 24vw 24vw 26vw;
-    grid-template-rows: 10vw 20vh 30vh 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,200px  );
     column-gap: 5px;
     row-gap: 5px;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
 
 }
+.container :nth-child(2), .container :nth-child(3){
+    background-color:#ff3000;
+}
+
+.container :nth-child(2):hover, .container :nth-child(3):hover{
+    background-color:#00ff0d;
+}
+
+
+
 
 .box{
     color: #fff;
     border: 2px solid #0000ff;
+    width: 50px;
+    height: 50px;
+    background-color: #fff000;
+}
+.box-1{
+    background-color: aqua; 
+    transition: all .4s easy-in-out;
+}
+.box-1:hover{
+    background-color: black; 
 }
