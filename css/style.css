@@ -33,6 +33,6 @@
     transition: all .4s ease;
 }
 
-.box-1:{
+.box-1:hover{
     background-color: black;
 }
