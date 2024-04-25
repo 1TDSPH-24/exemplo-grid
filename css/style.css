@@ -7,19 +7,86 @@
 .container{
     display: grid;
     height: 100vh;
-    border: 2px solid #fff000;
     grid-template-columns:1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* column-gap: 5px;
-    row-gap: 5px; */
     gap: 5px;
-    
-    /* justify-items: end;
-    align-items: center;
-    justify-content: center;
-    align-content: center; */
+
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'cabecalho cabecalho'
+    'conteudo-1 login'
+    'conteudo-2 login'
+    'rodape rodape'
+    'rodape rodape'
+    ;
 }
 
+
+@media screen and (max-width:360px){
+        
+    .container{
+        grid-template-areas: 
+        'cabecalho'
+        'conteudo-1'
+        'login'
+        'conteudo-2'
+        'rodape'
+        ;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns:1fr;
+        }
+
+    }
+
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: #0000ff;
+}
+
+.conteudo-1{
+    grid-area: conteudo-1;
+    background-color: #00ff1e;
+}
+
+.login{
+    grid-area: login;
+    background-color: #00ffd0;
+}
+
+.conteudo-2{
+    grid-area: conteudo-2;
+    background-color: #ff00d4;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #ff4000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .container :nth-child(1){
     grid-column-start: 1;
     grid-column-end: 4;
@@ -29,21 +96,21 @@
 }
 
 .container :nth-child(2){
-    /* grid-column-start: 1;
-    grid-column-end: 2; */
+    grid-column-start: 1;
+    grid-column-end: 2; 
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    /* grid-row-start: 4;
-    grid-row-end: 6; */
+    grid-row-start: 4;
+    grid-row-end: 6; 
 }
 
 .container :nth-child(3){
-    /* grid-column-start: 1;
-    grid-column-end: 2; */
+grid-column-start: 1;
+    grid-column-end: 2; 
     grid-column: 1 / 2;
     grid-row: 4 / 6;
-    /* grid-row-start: 4;
-    grid-row-end: 6; */
+    grid-row-start: 4;
+    grid-row-end: 6;
 }
 
 .container :nth-child(4){
@@ -58,7 +125,7 @@
 }
 
 
-/* @media tipo-de-midia(screen/print/speech) e (max-width, min-width, orientation, min-resolution, max-resolution) */
+/* @media tipo-de-midia(screen/print/speech) e (max-width, min-width, orientation, min-resolution, max-resolution) 
 
 @media screen and (max-width:360px){
     
@@ -90,7 +157,7 @@
     grid-row: 6 / 7;
 
 }
-}
+} */
 
 
 
@@ -109,8 +176,7 @@
 
 .container :nth-child(2):hover, .container :nth-child(3):hover{
     background-color: #00ff0d;
-} */
-
+}
 
 .box{
     color: #fff;
